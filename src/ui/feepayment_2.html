@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Payment</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Collect Fee 2</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="home.html">Dashboard</a></li>
+          <li><a href="managestudents.html">Students</a></li>
+          <li style="background-color: rgb(255, 218, 163);"><a href="#">Payments</a></li>
+          <li><a href="feestatus.html">Fee Status</a></li>
+          <li><a href="managefee.html">Manage Fee</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+  <main class="container-fluid">
+
+    <div class="row">
+
+      
+      <div class="col-md-6 p-4 my-auto">
+        <div id="fees"></div>
+
+        <div class="payment_record">
+          <h3>Previous Fee Payments</h3>
+          <table id="tableBody" class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Date&Time</th>
+                <th scope="col">Fee Title</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Month</th>
+                <th scope="col">Receipt</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        
+      </div>
+
+      <!-- Product List -->
+      <div class="col-md-6">
+
+        <div class="container">
+          <form id="feeDetail" class="card card-body">
+            <h4>Fees</h4>
+            <div id="formbody"></div>
+
+            <button type="submit" class="btn btn-primary">
+              Proceed
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./feepayment_2.js"></script>
+
+</body>
+
+</html>

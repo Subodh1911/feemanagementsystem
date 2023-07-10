@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Payment</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Check Fee Status</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Dashboard</a></li>
+            <li><a href="managestudents.html">Students</a></li>
+            <li><a href="feepayment.html">Payments</a></li>
+            <li style="background-color: rgb(255, 218, 163);"><a href="#">Fee Status</a></li>
+            <li><a href="managefee.html">Manage Fee</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+  <main class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-6 p-4 my-auto">
+
+        <!-- Product Form -->
+        <form id="classDetail" class="card card-body">
+          <h3>Enter Details</h3>
+          <div class="form-group">
+            <input type="text" style="text-transform:uppercase" id="standard" placeholder="Class" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" style="text-transform:uppercase" id="section" placeholder="Section" class="form-control"></input>
+          </div>
+          <div class="form-group">
+            <select id="month" class="form-control">
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+            <option value="13">January</option>
+            <option value="14">February</option>
+            <option value="15">March</option>
+            <!-- Add more months as needed -->
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+
+        <br>
+
+        <div class="card p-2" id="feeDetail">
+          
+        </div>
+
+      </div>
+
+      <!-- Product List -->
+      <div class="col-md-6">
+        <form id="studentlist" class="card card-body">
+          <button type="submit" class="btn btn-primary">
+            Print List
+          </button>
+        </form>
+            
+        <br>
+
+        <h3>
+          <small class="text-muted">Fee Remaining Till the Month</small>
+        </h3>
+
+        <div class="payment_record">
+          <table id="tableheadcopy" class="table table-hover" hidden>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Roll No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Mobile No</th>
+                <th scope="col">Remaining fee</th>
+                <th scope="col">Desc</th>
+                <th scope="col">Pay</th>
+              </tr>
+            </thead>
+          </table>
+          <table id="tableBody" class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Roll No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Mobile No</th>
+                <th scope="col">Remaining fee</th>
+                <th scope="col">Desc</th>
+                <th scope="col">Pay</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./feestatus.js"></script>
+
+</body>
+
+</html>

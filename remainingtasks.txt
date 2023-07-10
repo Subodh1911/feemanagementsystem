@@ -1,0 +1,27 @@
+Pending
+
+8. User Management
+9. Admin Facility
+10. SMS Service
+16. Back Issue
+
+
+Working
+
+
+
+Done
+
+1. Show student classwise with payment button and fee details
+2. Detailed description remaining fee
+5. Bus fee issue
+3. Parent name -> Father name
+13. Seperate Page for student list
+7. Table issue
+6. Menu
+4. College photo
+11. Upgrade option
+12. Delete Button issue
+17. Without selecting fee generated report
+14. Print remaining fee student list
+15. Class UKG NC

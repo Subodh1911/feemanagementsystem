@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Payment</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+
+  <script>
+    console.log("fee payment");
+  </script>
+
+  <header>
+    <h1>Collect Fee</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Dashboard</a></li>
+            <li><a href="managestudents.html">Manage Students</a></li>
+            <li style="background-color: rgb(255, 218, 163);"><a href="#">Payments</a></li>
+            <li><a href="feestatus.html">Fee Status</a></li>
+            <li><a href="managefee.html">Manage Fee</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+  <main class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-6 p-4 my-auto">
+
+        <!-- Product Form -->
+        <form id="studentDetail" class="card card-body">
+          <h3>Enter Student Details</h3>
+          <h6 id="studentfind"></h6>
+          <div class="form-group">
+            <input type="text" id="student_name" placeholder="Student Name" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" style="text-transform:uppercase" id="standard" placeholder="Class" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" style="text-transform:uppercase" id="section" placeholder="Section" class="form-control"></input>
+          </div>
+          <div class="form-group">
+            <input type="number" id="roll_no" placeholder="Roll Number" class="form-control"></input>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+        <br>
+
+        <div class="payment_record">
+          <table id="tableBody" class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Date&Time</th>
+                <th scope="col">Fee Title</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Month</th>
+                <th scope="col">Receipt</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        
+      </div>
+
+      <!-- Product List -->
+      <div class="col-md-6">
+        <div id="fees"></div>
+        <div class="container">
+          <form id="feeDetail" class="card card-body">
+            <h4>Fees</h4>
+            <div id="formbody"></div>
+
+            <button type="submit" class="btn btn-primary">
+              Proceed
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./feepayment.js"></script>
+
+</body>
+
+</html>

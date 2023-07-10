@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    
+    <button onclick="window.location.href = 'feestatus.html' ">Back</button>
+    <button onclick="window.print()">Print List</button>
+    <div class="container">
+        <div class="row-md-6">
+            <h3 id="feetext"></h3>
+            <table  id = "studentlist" class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Student Registration No</th>
+                <th scope="col">Class</th>
+                <th scope="col">Section</th>
+                <th scope="col">Roll No</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Father's Name</th>
+                <th scope="col">Mobile No</th>
+                <th scope="col">Remaining Fee</th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+    </div>  
+</body>
+</html>
+
+<script src="printlist.js"></script>

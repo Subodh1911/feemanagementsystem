@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>School Fee Payment Receipt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .receipt-info {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    th {
+      text-align: left;
+    }
+    
+    .total {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+    <form action="feestatus.html">
+        <button type="submit" class="btn btn-primary">
+            Back
+          </button>
+    </form>
+  <div class="container">
+    <h1>School Fee Payment Receipt</h1>
+    
+    <div class="receipt-info" id="info">
+      
+    </div>
+    
+    <table id="tablebody">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Month</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+    </table>
+    
+    <div ></div>
+
+    <p><strong>Payment Method:</strong> Cash</p>
+    
+    <p>Thank you for your payment!</p>
+  </div>
+
+  <button class="btn btn-secondary btn-sm" onclick="window.print()">
+    PRINT 
+</button>
+
+</body>
+
+<script src="showreceipt.js"></script>
+
+</html>
+
