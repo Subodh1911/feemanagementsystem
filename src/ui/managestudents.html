@@ -31,7 +31,9 @@
 
     <div class="">
 
+      <button class="btn btn-success" id="addbutton" onclick="func()">Add New Student</button>
       <div class="row-md-6 p-5 my-auto">
+        
 
         <!-- Product Form -->
         <form id="studentForm" class="card card-body">
@@ -110,3 +112,11 @@
 </body>
 
 </html>
+
+<script>
+  document.getElementById("studentForm").style.display="none";
+  function func() {
+    document.getElementById("studentForm").style.display="block";
+    document.getElementById("addbutton").style.display="none";
+  }
+</script>

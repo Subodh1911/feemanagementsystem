@@ -215,9 +215,9 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
-
   window.setMenuBarVisibility(false)
   window.loadFile("src/ui/login.html");
+  window.maximize();
 }
 
 module.exports = {

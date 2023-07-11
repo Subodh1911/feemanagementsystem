@@ -35,6 +35,7 @@ const paymentpage = async (student_no) => {
 }
 
 const editStudent = async (student_no) => {
+  document.getElementById("studentForm").style.display="block";
   const student = await main.getStudentBystudent_no(student_no);
   student_name.value = student.student_name;
   student_reg_no.value = student.student_reg_no;
