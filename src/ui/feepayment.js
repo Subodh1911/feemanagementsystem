@@ -1,18 +1,7 @@
 const { remote } = require("electron");
 const main = remote.require("./main");
-const accountSid = 'AC422ff47850c29a5283584d084275c696';
-const authToken = 'f5a79f825f1f44f98715726807e7148e';
-const client = require('twilio')(accountSid, authToken);
 
-function sendSMS(toPhoneNumber, message) {
-  client.messages.create({
-    body: message,
-    from: '+14454563184',
-    to: toPhoneNumber
-  })
-  .then(message => console.log('SMS sent:', message.sid))
-  .catch(error => console.error('Error sending SMS:', error));
-}
+
 
 const studentDetail = document.querySelector("#studentDetail");
 const student_name = document.querySelector("#student_name");
@@ -193,10 +182,7 @@ feeDetail.addEventListener("submit", async (e) => {
           bus_service : result.bus_service,
           data : data
         }
-          const phoneNumber = "+917078729760";
-          const notificationMessage = "Your payment was successful. Thank you!";
-
-          // sendSMS(phoneNumber, notificationMessage);
+          
 
           var queryString = new URLSearchParams(datatosend).toString();
           window.location.href = "feereceipt.html?" + queryString;
